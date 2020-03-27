@@ -15,7 +15,6 @@ for climber in climbers:
 
 #sort items
 sorted_climber_counts = sorted(climberCounts.items(), key=operator.itemgetter(1))
-print(sorted_climber_counts)
 
 climbers = []
 ascents = []
@@ -31,15 +30,3 @@ plt.ylabel('V13 ascents (or harder)')
 plt.title('Female Boulders by Ascents')
 plt.tight_layout()
 plt.savefig("climbers.pdf")
-
-
-
-
-"""
-plt.plot(x,y, label='Loaded from file!')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Interesting Graph\nCheck it out')
-plt.legend()
-plt.show()
-"""
